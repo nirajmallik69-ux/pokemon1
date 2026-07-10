@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/pokeball.png">
+    <link rel="stylesheet" href="/style.css">
+    <title>Pokémon finder</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="image1">
+                <img src="/assets/pikachu.png" height="100" width="100" alt="pikachu">
+            </div>
+            <div class="txt1">
+                <h1>Pokemon finder</h1>
+            </div>
+            <div class="image2">
+                <img src="/assets/charmender2.png" height="100" width="100" alt="charmender">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content1">
+            <p>Enter Pokémon Name
+            </p>
+            <input type="text" id="pokemonName1" placeholder="Enter Pokémon Name">
+            <p id="errorMessage" style="color: red;"></p>
+            <button id="searchButton">Search</button>
+        </div>
+
+        <div class="content2">
+            <div class="pokemon-info" id="pokemonInfo">
+                <h2 id="pokemonName"></h2>
+
+                <img id="pokemonImage">
+
+                <p id="pokemonType"></p>
+
+                <p id="pokemonHP"></p>
+
+                <p id="pokemonAttack"></p>
+
+                <p id="pokemonDefense"></p>
+
+                <p id="pokemonSpeed"></p>
+
+                <p id="pokemonHeight"></p>
+
+                <p id="pokemonWeight"></p>
+
+                <p id="pokemonID"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer1">
+            <p>⚡ Pokémon Finder</p>
+            <p>Developed by Niraj Mallik</p>
+            <p>Powered by PokéAPI ❤️</p>
+            <p>Catch 'Em All! ⚡</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
