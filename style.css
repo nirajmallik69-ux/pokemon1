@@ -15,22 +15,49 @@
 @media screen and (max-width: 570px) {
 
     .content2 {
-        max-width: 500px;
+        max-width: 380px;
         margin: 20px auto;
         padding: 20px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        text-align: left;
-        align-items: flex-start;
-        width: 90vw;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 85%;
         background-color: white;
         border: 1px solid grey;
-        border-radius: 10px;
+        border-radius: 15px;
         font-family: 'Outfit', sans-serif;
     }
 
+    #pokemonImage {
+        width: 160px;
+        height: 160px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }   
 
+    .progress-bar {
+        width: 100%;
+    }
+
+    .stat{
+        display: grid;
+        grid-template-columns: 90px 1fr 35px;
+        gap: 8px;
+        align-items: center;
+        width: 100%;
+    }
+
+    #pokemonName {
+        font-size: 38px;
+    }
+
+    .content1 input{
+
+        width: min(85vw, 300px);
+    }
 }
 
 @keyframes shake {
@@ -157,7 +184,7 @@ main {
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 90vw;
+    width: min(90vw, 700px);
     background-color: white;
     border: 1px solid grey;
     border-radius: 10px;
