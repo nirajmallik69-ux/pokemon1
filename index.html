@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/pokeball.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Pokémon finder</title>
 </head>
 
@@ -26,21 +26,32 @@
 
     <main>
         <div class="content1">
-            <p>Enter Pokémon Name
-            </p>
+            <p>Enter Pokémon Name</p>
+
             <input type="text" id="pokemonName1" placeholder="Enter Pokémon Name">
+
             <p id="errorMessage" style="color: red;"></p>
+
             <button id="searchButton">Search</button>
+
+            <div id="loading">
+                <img src="assets/loading.gif" alt="loading" width="220px">
+                <p id="loadingMessage"></p>
+            </div>
         </div>
 
         <div class="content2">
             <div class="pokemon-info" id="pokemonInfo">
+
                 <h2 id="pokemonName"></h2>
 
-                <img id="pokemonImage">
+                <img id="pokemonImage" alt="pokemon image">
 
                 <p id="pokemonType"></p>
 
+                <!-- ================= OLD CODE ================= -->
+
+                <!--
                 <p id="pokemonHP"></p>
 
                 <p id="pokemonAttack"></p>
@@ -48,22 +59,64 @@
                 <p id="pokemonDefense"></p>
 
                 <p id="pokemonSpeed"></p>
+                -->
+
+                <!-- ================= NEW CODE ================= -->
+
+                <div class="stat">
+                    <span>❤️ HP</span>
+
+                    <div class="progress-bar">
+                        <div id="hpFill" class="fill hp"></div>
+                    </div>
+
+                    <span id="pokemonHP"></span>
+                </div>
+
+                <div class="stat">
+                    <span>⚔ Attack</span>
+
+                    <div class="progress-bar">
+                        <div id="attackFill" class="fill attack"></div>
+                    </div>
+
+                    <span id="pokemonAttack"></span>
+                </div>
+
+                <div class="stat">
+                    <span>🛡 Defense</span>
+
+                    <div class="progress-bar">
+                        <div id="defenseFill" class="fill defense"></div>
+                    </div>
+
+                    <span id="pokemonDefense"></span>
+                </div>
+
+                <div class="stat">
+                    <span>💨 Speed</span>
+
+                    <div class="progress-bar">
+                        <div id="speedFill" class="fill speed"></div>
+                    </div>
+
+                    <span id="pokemonSpeed"></span>
+                </div>
 
                 <p id="pokemonHeight"></p>
 
                 <p id="pokemonWeight"></p>
 
                 <p id="pokemonID"></p>
+
             </div>
         </div>
     </main>
 
     <footer>
         <div class="footer1">
-            <p>⚡ Pokémon Finder</p>
             <p>Developed by Niraj Mallik</p>
             <p>Powered by PokéAPI ❤️</p>
-            <p>Catch 'Em All! ⚡</p>
         </div>
     </footer>
 
