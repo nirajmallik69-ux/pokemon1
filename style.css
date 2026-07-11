@@ -12,54 +12,6 @@
     padding: 0;
 }
 
-@media screen and (max-width: 570px) {
-
-    .content2 {
-        max-width: 380px;
-        margin: 20px auto;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        width: 85%;
-        background-color: white;
-        border: 1px solid grey;
-        border-radius: 15px;
-        font-family: 'Outfit', sans-serif;
-    }
-
-    #pokemonImage {
-        width: 160px;
-        height: 160px;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }   
-
-    .progress-bar {
-        width: 100%;
-    }
-
-    .stat{
-        display: grid;
-        grid-template-columns: 90px 1fr 35px;
-        gap: 8px;
-        align-items: center;
-        width: 100%;
-    }
-
-    #pokemonName {
-        font-size: 38px;
-    }
-
-    .content1 input{
-
-        width: min(85vw, 300px);
-    }
-}
-
 @keyframes shake {
     0% {
         transform: translateX(0);
@@ -159,7 +111,7 @@ main {
 
 .content1 input {
     font-family: 'Outfit', sans-serif;
-    width: 300px;
+    width:min(90%,300px);
     height: 30px;
     border: 1px solid black;
     border-radius: 3px;
@@ -291,7 +243,6 @@ main {
 
 
 
-
 /* ================= Pokemon Type Colors ================= */
 
 .fire {
@@ -389,4 +340,57 @@ main {
 #pokemonImage:hover {
     transform: scale(1.2) rotate(-5deg);
     transition: 0.3s;
+}
+
+
+/* ================= Mobile Fix ================= */
+@media screen and (max-width:570px){
+
+    .txt1 h1{
+        font-size:38px;
+    }
+
+    .content1{
+        margin-top:30px;
+        padding:0 15px;
+    }
+
+    .content1 p{
+        font-size:24px;
+    }
+
+    .content1 input{
+        width:100%;
+        max-width:320px;
+        box-sizing:border-box;
+    }
+
+    .content2{
+        width:92%;
+        padding:18px;
+        box-sizing:border-box;
+    }
+
+    #pokemonImage{
+        width:150px;
+        height:150px;
+    }
+
+    #pokemonName{
+        font-size:28px;
+    }
+
+    .stat{
+        grid-template-columns:70px 1fr 35px;
+        gap:8px;
+    }
+
+    .progress-bar{
+        width:100%;
+    }
+
+    .footer1{
+        font-size:14px;
+        padding:15px;
+    }
 }
