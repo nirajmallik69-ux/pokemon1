@@ -22,6 +22,3 @@
 Clone the repository
 
 Open index.html
-
-Enjoy!
-
